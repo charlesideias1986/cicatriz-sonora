@@ -127,3 +127,17 @@ a{color:inherit;text-decoration:none}
   font-size:clamp(1.4rem,3.4vw,2.4rem);font-style:italic;color:var(--accent);
   max-width:30ch;margin-top:1rem
 }
+
+.passos{list-style:none;display:grid;gap:2.2rem;max-width:46rem}
+.passo{display:grid;grid-template-columns:auto 1fr;gap:1.4rem;align-items:start;
+  border-top:1px solid rgba(242,239,233,.12);padding-top:1.8rem}
+.passo__n{font-family:var(--serif);font-size:2.2rem;color:var(--accent);line-height:1}
+.passo h3{font-size:1.5rem;font-weight:400;margin-bottom:.3rem}
+.passo p{opacity:.74}
+
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;
+  background:rgba(242,239,233,.12);border:1px solid rgba(242,239,233,.12)}
+.tile{background:var(--bg);padding:2.2rem 1.8rem;transition:background .5s ease}
+.tile:hover{background:rgba(242,239,233,.045)}
+.tile h3{font-size:1.4rem;font-weight:400;margin-bottom:.5rem}
+.tile p{font-size:.95rem;opacity:.7}
