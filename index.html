@@ -30,6 +30,20 @@
         </button>
       </div>
     </section>
+
+    <div id="film" class="film" hidden>
+      <button class="film__close" type="button" aria-label="Fechar">✕</button>
+      <div class="film__frame">
+        <!-- src é preenchido pelo JS a partir do CONFIG.VIMEO_ID -->
+        <iframe id="filmFrame" title="Cicatriz Sonora — a peça"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="film__after">
+        <p class="film__after-line serif">E aí, a sua história?</p>
+        <a class="film__after-cta" href="#conversar">me conta a sua história</a>
+      </div>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>
