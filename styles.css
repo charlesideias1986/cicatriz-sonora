@@ -153,3 +153,32 @@ a{color:inherit;text-decoration:none}
 .wrap--narrow{max-width:44rem}
 .carta__body{font-size:clamp(1.2rem,2.6vw,1.75rem);line-height:1.65;margin-bottom:1.6rem}
 .carta__sign{margin-top:1.4rem;color:var(--accent);letter-spacing:.1em}
+
+.cta__title{font-size:clamp(2rem,5vw,3.4rem);font-weight:300;margin-bottom:.8rem}
+.cta__sub{opacity:.75;margin-bottom:2.6rem;max-width:40ch}
+.bq{max-width:36rem;margin-inline:auto;text-align:left}
+.bq__bar{height:1px;background:rgba(242,239,233,.15);margin-bottom:2rem;position:relative}
+.bq__bar span{position:absolute;left:0;top:0;height:100%;background:var(--accent);width:0;transition:width .4s ease}
+.bq__steps{min-height:11rem}
+.bq__q{display:none}
+.bq__q.is-active{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.bq__label{display:block;font-family:var(--serif);font-size:1.35rem;margin-bottom:1rem;line-height:1.4}
+.bq__opt{display:block;border:1px solid rgba(242,239,233,.16);padding:.8rem 1rem;margin-bottom:.6rem;
+  cursor:pointer;transition:border-color .3s,background .3s;font-size:.95rem}
+.bq__opt:hover{border-color:var(--accent)}
+.bq__opt input{display:none}
+.bq__opt input:checked + span{color:var(--accent)}
+.bq__opt:has(input:checked){border-color:var(--accent);background:rgba(200,169,106,.06)}
+.bq__input,.bq__area{width:100%;background:transparent;color:var(--ink);border:1px solid rgba(242,239,233,.16);
+  padding:.85rem 1rem;font-family:var(--sans);font-size:.95rem;margin-bottom:.6rem}
+.bq__area{min-height:7rem;resize:vertical}
+.bq__input:focus,.bq__area:focus{outline:none;border-color:var(--accent)}
+.bq__nav{display:flex;justify-content:space-between;margin-top:1.6rem}
+.bq__prev,.bq__next{background:none;border:1px solid var(--accent);color:var(--accent);
+  padding:.7rem 1.4rem;border-radius:999px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
+.bq__next:hover,.bq__prev:hover{background:var(--accent);color:var(--bg)}
+.bq__prev{border-color:rgba(242,239,233,.3);color:var(--ink);opacity:.7}
+.bq__done .serif{font-size:1.6rem;color:var(--accent);text-align:center}
+.cta__alt{text-align:center;margin-top:2.4rem;opacity:.7;font-size:.9rem}
+.cta__alt a{color:var(--accent);border-bottom:1px solid var(--accent)}
