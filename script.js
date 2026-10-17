@@ -111,6 +111,14 @@ const CS = (() => {
   const wa = document.getElementById('waLink');
   if (wa) wa.href = `https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent('Olá! Quero fazer um filme de memória com o Cicatriz Sonora.')}`;
 
+  // Rodapé: contatos e ano
+  const fw = document.getElementById('footWa');
+  const fm = document.getElementById('footMail');
+  if (fw) fw.href = `https://wa.me/${CONFIG.WHATSAPP}`;
+  if (fm) fm.href = `mailto:${CONFIG.EMAIL}`;
+  const yr = document.getElementById('year');
+  if (yr) yr.textContent = new Date().getFullYear();
+
   return { CONFIG, openFilm, closeFilm };
 })();
 
