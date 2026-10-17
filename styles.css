@@ -1,0 +1,31 @@
+:root{
+  --bg:#0A0A0C;
+  --ink:#F2EFE9;
+  --accent:#C8A96A;
+  --accent-2:#8A2E2E;
+  --serif:'Cormorant Garamond', Georgia, serif;
+  --sans:'Inter', system-ui, sans-serif;
+  --wrap:1080px;
+  --gutter:clamp(1.25rem, 5vw, 4rem);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-weight:300;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+.serif{font-family:var(--serif)}
+a{color:inherit;text-decoration:none}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{animation:none !important;transition:none !important}
+}
