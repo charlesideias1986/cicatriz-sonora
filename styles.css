@@ -1,10 +1,10 @@
 :root{
   --bg:#0A0A0C;
   --ink:#F2EFE9;
-  --accent:#C8A96A;
+  --accent:#C1272D;
   --accent-2:#8A2E2E;
-  --serif:'Cormorant Garamond', Georgia, serif;
-  --sans:'Inter', system-ui, sans-serif;
+  --serif:'Fraunces', Georgia, serif;
+  --sans:'Manrope', system-ui, sans-serif;
   --wrap:1080px;
   --gutter:clamp(1.25rem, 5vw, 4rem);
 }
@@ -170,7 +170,7 @@ a{color:inherit;text-decoration:none}
 .bq__opt input{position:absolute;width:1px;height:1px;opacity:0;margin:0;pointer-events:none}
 .bq__opt input:checked + span{color:var(--accent)}
 .bq__opt input:focus-visible + span{outline:1px solid var(--accent);outline-offset:2px}
-.bq__opt:has(input:checked){border-color:var(--accent);background:rgba(200,169,106,.06)}
+.bq__opt:has(input:checked){border-color:var(--accent);background:rgba(193,39,45,.06)}
 .bq__input,.bq__area{width:100%;background:transparent;color:var(--ink);border:1px solid rgba(242,239,233,.16);
   padding:.85rem 1rem;font-family:var(--sans);font-size:.95rem;margin-bottom:.6rem}
 .bq__area{min-height:7rem;resize:vertical}
