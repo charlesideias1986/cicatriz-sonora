@@ -23,7 +23,7 @@ assets/       # imagens e mídia
 | ------------ | ---------------------------- |
 | `--bg`       | `#0A0A0C`                    |
 | `--ink`      | `#F2EFE9`                    |
-| `--accent`   | `#A46BA8`                    |
+| `--accent`   | `#C25A3C`                    |
 | `--accent-2` | `#8A2E2E`                    |
 | `--sans`     | Manrope                      |
 | `--wrap`     | `1080px`                     |
