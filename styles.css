@@ -1,9 +1,9 @@
 :root{
   --bg:#0A0A0C;
   --ink:#F2EFE9;
-  --accent:#C1272D;
+  --accent:#E63946;
   --accent-2:#8A2E2E;
-  --serif:'Fraunces', Georgia, serif;
+  --serif:'Playfair Display', Georgia, serif;
   --sans:'Manrope', system-ui, sans-serif;
   --wrap:1080px;
   --gutter:clamp(1.25rem, 5vw, 4rem);
@@ -57,14 +57,14 @@ a{color:inherit;text-decoration:none}
   text-align:center;padding:0 var(--gutter) 12vh;gap:1.6rem;
 }
 .hero__mark{
-  font-weight:300;line-height:1;
+  font-weight:500;line-height:1;
   font-size:clamp(2.1rem, 7.5vw, 5.6rem);
   letter-spacing:.34em;
   text-indent:.34em;
   color:var(--ink);
 }
 .hero__tagline{
-  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-family:var(--serif);font-style:italic;font-weight:400;
   font-size:clamp(1.05rem, 2.4vw, 1.6rem);
   color:var(--ink);opacity:.86;max-width:34ch;
 }
@@ -113,7 +113,7 @@ a{color:inherit;text-decoration:none}
   color:var(--accent);margin-bottom:2rem
 }
 .oquee__lede{
-  font-size:clamp(1.35rem,3vw,2.1rem);line-height:1.5;font-weight:300;
+  font-size:clamp(1.35rem,3vw,2.1rem);line-height:1.5;font-weight:400;
   max-width:34ch;margin-bottom:1.6rem
 }
 .pilares{
@@ -154,7 +154,7 @@ a{color:inherit;text-decoration:none}
 .carta__body{font-size:clamp(1.2rem,2.6vw,1.75rem);line-height:1.65;margin-bottom:1.6rem}
 .carta__sign{margin-top:1.4rem;color:var(--accent);letter-spacing:.1em}
 
-.cta__title{font-size:clamp(2rem,5vw,3.4rem);font-weight:300;margin-bottom:.8rem}
+.cta__title{font-size:clamp(2rem,5vw,3.4rem);font-weight:500;margin-bottom:.8rem}
 .cta__sub{opacity:.75;margin-bottom:2.6rem;max-width:40ch}
 .bq{max-width:36rem;margin-inline:auto;text-align:left}
 .bq__bar{height:1px;background:rgba(242,239,233,.15);margin-bottom:2rem;position:relative}
@@ -170,7 +170,7 @@ a{color:inherit;text-decoration:none}
 .bq__opt input{position:absolute;width:1px;height:1px;opacity:0;margin:0;pointer-events:none}
 .bq__opt input:checked + span{color:var(--accent)}
 .bq__opt input:focus-visible + span{outline:1px solid var(--accent);outline-offset:2px}
-.bq__opt:has(input:checked){border-color:var(--accent);background:rgba(193,39,45,.06)}
+.bq__opt:has(input:checked){border-color:var(--accent);background:rgba(230,57,70,.06)}
 .bq__input,.bq__area{width:100%;background:transparent;color:var(--ink);border:1px solid rgba(242,239,233,.16);
   padding:.85rem 1rem;font-family:var(--sans);font-size:.95rem;margin-bottom:.6rem}
 .bq__area{min-height:7rem;resize:vertical}

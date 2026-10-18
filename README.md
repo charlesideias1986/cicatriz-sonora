@@ -23,9 +23,9 @@ assets/       # imagens e mídia
 | ------------ | ---------------------------- |
 | `--bg`       | `#0A0A0C`                    |
 | `--ink`      | `#F2EFE9`                    |
-| `--accent`   | `#C1272D`                    |
+| `--accent`   | `#E63946`                    |
 | `--accent-2` | `#8A2E2E`                    |
-| `--serif`    | Fraunces                     |
+| `--serif`    | Playfair Display             |
 | `--sans`     | Manrope                      |
 | `--wrap`     | `1080px`                     |
 | `--gutter`   | `clamp(1.25rem, 5vw, 4rem)`  |
