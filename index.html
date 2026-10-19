@@ -23,6 +23,7 @@
         <span class="hero__nav-mark display">CICATRIZ&nbsp;SONORA</span>
         <div class="hero__nav-links">
           <a href="#o-que-e">O que é</a>
+          <a href="#filmes">Filmes</a>
           <a href="#como-funciona">Como funciona</a>
           <a href="#conversar">Conversar</a>
         </div>
@@ -30,10 +31,12 @@
 
       <div class="hero__stage">
         <h1 id="wordmark" class="hero__mark display">CICATRIZ SONORA</h1>
+        <p class="hero__sub">Filmes feitos com as fotos e os vídeos que você já tem.</p>
         <p class="hero__tagline">Memórias que encontram uma forma de continuar vivas.</p>
-        <button id="playHero" class="hero__play" type="button" aria-label="Assistir à peça">
+        <button id="playHero" class="hero__play" type="button" data-open-film aria-label="Assistir à peça">
           <span class="hero__play-icon">▶</span> assistir à peça
         </button>
+        <p class="hero__note">Sem entrevista. Sem equipe. Sem dia de gravação.</p>
       </div>
     </section>
 
@@ -63,6 +66,47 @@
       </div>
     </section>
 
+    <section id="comparativo" class="section comparativo">
+      <div class="wrap reveal">
+        <p class="section__kicker">A diferença</p>
+        <div class="comparativo__pair">
+          <figure class="comparativo__item">
+            <img src="assets/antes.jpg" alt="Foto de arquivo, antes do tratamento"
+                 loading="lazy" onerror="document.getElementById('comparativo').hidden=true">
+            <figcaption>antes</figcaption>
+          </figure>
+          <figure class="comparativo__item">
+            <img src="assets/depois.jpg" alt="O mesmo quadro depois do tratamento de imagem"
+                 loading="lazy" onerror="document.getElementById('comparativo').hidden=true">
+            <figcaption>depois</figcaption>
+          </figure>
+        </div>
+        <p class="comparativo__line display">O acervo é o mesmo. O que muda é o que se faz com ele.</p>
+        <p class="comparativo__note">
+          É por isso que esse trabalho também existe para quem já partiu: não é preciso gravar
+          nada — só olhar de novo para o que ficou.
+        </p>
+      </div>
+    </section>
+
+    <section id="filmes" class="section filmes">
+      <div class="wrap reveal">
+        <p class="section__kicker">Filmes</p>
+        <article class="filme">
+          <button class="filme__thumb" type="button" data-open-film aria-label="Assistir à peça">
+            <img src="assets/poster.jpg" alt="Quadro da peça Cicatriz Sonora" loading="lazy">
+            <span class="filme__play">▶</span>
+          </button>
+          <div class="filme__info">
+            <h3 class="display">A peça</h3>
+            <p class="filme__meta">3 min 43 s · 2026</p>
+            <p class="filme__desc">O filme que deu nome ao projeto — a primeira história contada aqui.</p>
+            <button class="filme__cta" type="button" data-open-film>Assistir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="como-funciona" class="section como">
       <div class="wrap reveal">
         <p class="section__kicker">Como funciona</p>
@@ -72,6 +116,10 @@
           <li class="passo"><span class="passo__n">3</span><div><h3 class="display">Curadoria e roteiro</h3><p>Escolho a música, a ordem e o caminho que a história vai seguir.</p></div></li>
           <li class="passo"><span class="passo__n">4</span><div><h3 class="display">Montagem e entrega</h3><p>Monto, trato a imagem e o som, e entrego o filme — pronto para guardar.</p></div></li>
         </ol>
+        <p class="passos__note">
+          Prazo: de 2 a 4 semanas, dependendo do escopo. A entrega é um arquivo em alta
+          qualidade e uma versão leve para WhatsApp.
+        </p>
       </div>
     </section>
 
@@ -93,9 +141,21 @@
     <div class="wrap reveal">
       <p class="section__kicker">Escopos</p>
       <div class="escopos__grid">
-        <article class="escopo"><h3 class="display">Essência</h3><p>um presente</p></article>
-        <article class="escopo escopo--mid"><h3 class="display">Retrato</h3><p>uma vida em capítulos</p></article>
-        <article class="escopo"><h3 class="display">Legado</h3><p>um documentário de família</p></article>
+        <article class="escopo">
+          <h3 class="display">Essência</h3>
+          <p class="escopo__tag">um presente</p>
+          <p class="escopo__spec">até 6 min · acervo enxuto · 1 rodada de ajustes</p>
+        </article>
+        <article class="escopo escopo--mid">
+          <h3 class="display">Retrato</h3>
+          <p class="escopo__tag">uma vida em capítulos</p>
+          <p class="escopo__spec">10 a 20 min · acervo médio · 2 rodadas de ajustes</p>
+        </article>
+        <article class="escopo">
+          <h3 class="display">Legado</h3>
+          <p class="escopo__tag">um documentário de família</p>
+          <p class="escopo__spec">25 a 40 min · acervo amplo · 2 rodadas de ajustes</p>
+        </article>
       </div>
       <p class="escopos__note">Cada história é única — o valor nasce depois que eu entendo a sua.</p>
     </div>

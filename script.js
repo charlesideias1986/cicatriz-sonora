@@ -7,7 +7,6 @@ const CS = (() => {
 
   const film = document.getElementById('film');
   const frame = document.getElementById('filmFrame');
-  const play = document.getElementById('playHero');
 
   function openFilm() {
     frame.src = `https://player.vimeo.com/video/${CONFIG.VIMEO_ID}?autoplay=1&title=0&byline=0&portrait=0&dnt=1`;
@@ -23,7 +22,9 @@ const CS = (() => {
     setTimeout(() => { film.hidden = true; }, 500);
   }
 
-  if (play) play.addEventListener('click', openFilm);
+  document.querySelectorAll('[data-open-film]').forEach((el) => {
+    el.addEventListener('click', openFilm);
+  });
   if (film) film.querySelector('.film__close').addEventListener('click', closeFilm);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !film.hidden) closeFilm(); });
   // "Fim do filme": mostra o CTA após 2s de reprodução parada no fim — heurística simples:
