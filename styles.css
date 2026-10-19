@@ -35,10 +35,10 @@ a{color:inherit;text-decoration:none}
   display:grid;
   grid-template-rows:auto 1fr;
   background-image:
-    linear-gradient(180deg, rgba(10,10,12,.72) 0%, rgba(10,10,12,.86) 60%, var(--bg) 100%),
+    linear-gradient(180deg, rgba(10,10,12,.58) 0%, rgba(10,10,12,.78) 60%, var(--bg) 100%),
     url('assets/poster.jpg');
   background-size:cover;
-  background-position:center;
+  background-position:62% center;
 }
 .hero__nav{
   display:flex;justify-content:space-between;align-items:center;
