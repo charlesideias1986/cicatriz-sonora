@@ -1,9 +1,9 @@
 const CS = (() => {
   const CONFIG = {
-    VIMEO_ID: '000000000',                 // ← trocar pelo ID real
+    VIMEO_ID: '1237267495',
     WHATSAPP: '5547999220690',
-    EMAIL: 'contato@cicatrizsonora.com',
-    BREVO_ACTION: '#',                     // ← action URL do form Brevo
+    EMAIL: 'cicatrizsonorafilms@gmail.com',
+    BREVO_ACTION: '#',
   };
 
   const film = document.getElementById('film');
